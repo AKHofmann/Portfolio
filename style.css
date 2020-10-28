@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+/* Style */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+.container h1 {
+  padding-top: 10px;
+}
+
+.header-profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid 2px rgb(230, 142, 0);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #9c9c9c;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  position: absolute;
+  transition: margin-left 0.5s;
+  padding-left: 15px;
+  padding-top: 15px;
+  opacity: 0.8;
+}
+
+#main:hover {
+  opacity: 1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  margin-left: 27px;
+  padding-bottom: 20px;
+}
+
+.primary-text {
+  color: rgb(230, 142, 0);
+}
+
+.main-links {
+  padding-top: 45px;
+}
+
+.btn {
+  padding: 5px;
+  font-size: 20px;
+  border: solid 2px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
