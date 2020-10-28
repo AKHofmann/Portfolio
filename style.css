@@ -115,7 +115,10 @@ video {
   padding: 5px;
   font-size: 20px;
   border: solid 2px;
-  border-radius: 10px;
-  color: white;
+  color: rgb(214, 214, 214);
   background-color: rgb(0, 0, 0);
+}
+
+.btn:hover {
+  color: white;
 }
